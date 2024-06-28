@@ -1,0 +1,77 @@
+$dark-red: #e60000;
+
+$white: white;
+$black: #020203;
+
+$dark-gray: #282d30;
+$light-gray: #fbfbfb;
+
+$red: #ff0000;
+$light-red: #ff00002f;
+
+$blue: #4ab8ff;
+$light-blue: rgba(74, 183, 255, 0.164);
+
+$yellow: #fdcc0c;
+$light-yellow: rgba(249, 206, 35, 0.188);
+
+$pink: #fd5181;
+$light-pink: rgba(253, 81, 130, 0.16);
+
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    counter-reset: services;
+    background-color: $black;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Between Medium and Large Screen */
+@media (max-width: 1199px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1400px) {
+    .container {
+        width: 90%;
+    }
+}

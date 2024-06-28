@@ -1,0 +1,17 @@
+@import "./global.module.scss";
+
+.greetingMessage {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.name {
+    color: $dark-red;
+}
+
+.congratulatoryMessage {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}

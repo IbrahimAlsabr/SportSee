@@ -1,0 +1,57 @@
+/* src/components/ScoreCard.css */
+.scoreCard {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1199px) {
+    .scoreCard {
+        width: 130px;
+        height: 130px;
+        top: 30%;
+    }
+}
+
+.scoreChart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.scoreText {
+    position: absolute;
+    top: calc(50% + 10px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .scoreText {
+        top: 80%;
+    }
+}
+
+.scorePercentage {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1199px) {
+    .scorePercentage {
+        font-size: 20px;
+    }
+}
+
+.scoreLabel {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}

@@ -1,0 +1,31 @@
+@import "../sass/global.module.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+	color: $white;
+	background-color: $black;
+}
+
+.header img {
+    width: 160px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 80px;
+	margin-right: 100px;
+}
+
+.nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+	font-size: 17px;
+}
+
+.nav ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
