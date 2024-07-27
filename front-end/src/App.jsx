@@ -9,10 +9,9 @@ import RadarChartCustom from "./components/Performance";
 import Legend from "./components/AvgSession";
 import Score from "./components/Score";
 import { useUseNutrientCardData } from "./hooks/useFetchData";
-// import { getUserInfo } from "./services/dataService";
 
 function App() {
-    const userId = 18;
+    const userId = import.meta.env.VITE_USER_ID_API_DATA;
     const nutrients = useUseNutrientCardData(userId);
 
     return (
@@ -35,7 +34,7 @@ function App() {
                                         <span>Calories brûlées (kCal)</span>
                                     </div>
                                 </div>
- 
+
                                 <CustomBarChart
                                     userId={userId}
                                 ></CustomBarChart>
